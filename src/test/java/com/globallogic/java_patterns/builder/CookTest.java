@@ -9,7 +9,7 @@ import org.junit.Test;
 public class CookTest {
 
     @Test
-    public void HawaiianPizzaBuilderTest() throws NoPizzaBuilderException {
+    public void hawaiianPizzaBuilderTest() throws NoPizzaBuilderException {
         Cook cook = new Cook();
         cook.setPizzaBuilder(new HawaiianPizzaBuilder());
 
@@ -24,7 +24,7 @@ public class CookTest {
     }
 
     @Test
-    public void SpicyPizzaBuilderTest() throws NoPizzaBuilderException {
+    public void spicyPizzaBuilderTest() throws NoPizzaBuilderException {
         Cook cook = new Cook();
         cook.setPizzaBuilder(new SpicyPizzaBuilder());
 
@@ -39,7 +39,7 @@ public class CookTest {
     }
 
     @Test(expected = NoPizzaBuilderException.class)
-    public void NoPizzaBuilderTest() throws NoPizzaBuilderException {
+    public void noPizzaBuilderTest() throws NoPizzaBuilderException {
         new Cook().getPizza();
     }
 }
