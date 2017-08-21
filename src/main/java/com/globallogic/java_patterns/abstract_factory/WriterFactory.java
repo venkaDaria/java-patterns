@@ -7,7 +7,7 @@ import com.globallogic.java_patterns.abstract_factory.sad.SadWriterFactory;
 public interface WriterFactory {
 
     static WriterFactory getInstance(Mood mood) throws NoMoodException {
-        switch(mood){
+        switch (mood) {
             case HAPPY:
                 return new HappyWriterFactory(); // can be singletons
             case SAD:

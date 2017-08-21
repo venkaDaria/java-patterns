@@ -11,6 +11,20 @@ public abstract class Flower {
 
     private int numberOfPetals;
 
+    // way with switch (FactoryMethod), can be moved in another class
+    public static Flower getInstance(FlowerName flowerName) throws NoFlowerException {
+        switch (flowerName) {
+            case ROSE:
+                return new Rose();
+            case DANDELION:
+                return new Dandelion();
+            case CHAMOMILE:
+                return new Chamomile();
+            default:
+                throw new NoFlowerException();
+        }
+    }
+
     public String getColor() {
         return color;
     }
@@ -44,19 +58,5 @@ public abstract class Flower {
     @Override
     public int hashCode() {
         return 31 * color.hashCode() + numberOfPetals;
-    }
-
-    // way with switch (FactoryMethod), can be moved in another class
-    public static Flower getInstance(FlowerName flowerName) throws NoFlowerException {
-        switch(flowerName) {
-            case ROSE:
-                return new Rose();
-            case DANDELION:
-                return new Dandelion();
-            case CHAMOMILE:
-                return new Chamomile();
-            default:
-                throw new NoFlowerException();
-        }
     }
 }
