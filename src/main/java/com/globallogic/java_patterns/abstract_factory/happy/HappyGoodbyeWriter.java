@@ -1,6 +1,6 @@
-package com.globallogic.java_pattern.abstract_factory.happy;
+package com.globallogic.java_patterns.abstract_factory.happy;
 
-import com.globallogic.java_pattern.abstract_factory.GoodbyeWriter;
+import com.globallogic.java_patterns.abstract_factory.GoodbyeWriter;
 
 public class HappyGoodbyeWriter implements GoodbyeWriter {
 

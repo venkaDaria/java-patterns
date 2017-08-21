@@ -1,4 +1,4 @@
-package com.globallogic.java_pattern.abstract_factory;
+package com.globallogic.java_patterns.abstract_factory;
 
 public interface HelloWriter {
 

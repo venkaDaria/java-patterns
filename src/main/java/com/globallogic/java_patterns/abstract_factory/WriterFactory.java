@@ -1,8 +1,8 @@
-package com.globallogic.java_pattern.abstract_factory;
+package com.globallogic.java_patterns.abstract_factory;
 
-import com.globallogic.java_pattern.abstract_factory.exception.NoMoodException;
-import com.globallogic.java_pattern.abstract_factory.happy.HappyWriterFactory;
-import com.globallogic.java_pattern.abstract_factory.sad.SadWriterFactory;
+import com.globallogic.java_patterns.abstract_factory.exception.NoMoodException;
+import com.globallogic.java_patterns.abstract_factory.happy.HappyWriterFactory;
+import com.globallogic.java_patterns.abstract_factory.sad.SadWriterFactory;
 
 public interface WriterFactory {
 

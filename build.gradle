@@ -1,4 +1,4 @@
-group 'com.globallogic.javapattern'
+group 'com.globallogic.java_patterns'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

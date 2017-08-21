@@ -1,7 +1,7 @@
-package com.globallogic.java_pattern.abstract_factory;
+package com.globallogic.java_patterns.abstract_factory;
 
-import com.globallogic.java_pattern.WriterTest;
-import com.globallogic.java_pattern.abstract_factory.exception.NoMoodException;
+import com.globallogic.java_patterns.WriterTest;
+import com.globallogic.java_patterns.abstract_factory.exception.NoMoodException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package com.globallogic.java_pattern.abstract_factory.exception;
+package com.globallogic.java_patterns.abstract_factory.exception;
 
 public class NoMoodException extends Throwable {
 

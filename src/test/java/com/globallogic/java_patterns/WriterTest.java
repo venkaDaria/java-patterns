@@ -1,4 +1,4 @@
-package com.globallogic.java_pattern;
+package com.globallogic.java_patterns;
 
 import org.junit.After;
 import org.junit.Before;
