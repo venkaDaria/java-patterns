@@ -35,6 +35,10 @@ public class Box implements Storable {
         this.things = Arrays.stream(things).collect(Collectors.toCollection(ArrayList::new));
     }
 
+    private static int size(final List<Storable> elements, final ToIntFunction<? super Storable> countElements) {
+        return elements.stream().mapToInt(countElements).sum();
+    }
+
     @Override
     public int getLimitSize() {
         return limitSize;
@@ -111,9 +115,5 @@ public class Box implements Storable {
 
     private boolean isOverflowed(final List<Storable> things) {
         return this.limitSize < size(things, Storable::getLimitSize);
-    }
-
-    private static int size(final List<Storable> elements, final ToIntFunction<? super Storable> countElements) {
-        return elements.stream().mapToInt(countElements).sum();
     }
 }

@@ -1,13 +1,13 @@
 package com.globallogic.java_patterns.singleton;
 
-// not lazy initialization
-class SingletonStaticField {
-    public static final SingletonStaticField INSTANCE = new SingletonStaticField();
-}
-
 // created at the time of access to the SingletonEnum class
 enum SingletonEnum {
     INSTANCE
+}
+
+// not lazy initialization
+class SingletonStaticField {
+    public static final SingletonStaticField INSTANCE = new SingletonStaticField();
 }
 
 // lazy initialization (all three below)
@@ -25,12 +25,12 @@ class SingletonSynchronizedAccessor {
 // only for static field
 class SingletonStaticClass {
 
-    private static class SingletonHolder {
-        private static final SingletonStaticClass HOLDER_INSTANCE = new SingletonStaticClass();
-    }
-
     public static SingletonStaticClass getInstance() {
         return SingletonHolder.HOLDER_INSTANCE;
+    }
+
+    private static class SingletonHolder {
+        private static final SingletonStaticClass HOLDER_INSTANCE = new SingletonStaticClass();
     }
 }
 
