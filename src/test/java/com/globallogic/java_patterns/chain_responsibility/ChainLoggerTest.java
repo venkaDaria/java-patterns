@@ -1,6 +1,9 @@
 package com.globallogic.java_patterns.chain_responsibility;
 
 import com.globallogic.java_patterns.WriterTest;
+import com.globallogic.java_patterns.chain_responsibility.impl.ConsoleLogger;
+import com.globallogic.java_patterns.chain_responsibility.impl.ErrorLogger;
+import com.globallogic.java_patterns.chain_responsibility.impl.FileLogger;
 import org.junit.Before;
 import org.junit.Test;
 
