@@ -7,6 +7,7 @@ public class PageContent {
     private String text;
 
     private int page;
+    private Memento undo;
 
     public void setTitle(final String title) {
         this.title = title;
@@ -18,27 +19,6 @@ public class PageContent {
 
     public void setPage(final int page) {
         this.page = page;
-    }
-
-    private Memento undo;
-
-    private class Memento {
-        private String mText;
-
-        private int mPage;
-
-        Memento() {
-            mText = text;
-            mPage = page;
-        }
-
-        String getText() {
-            return mText;
-        }
-
-        int getPage() {
-            return mPage;
-        }
     }
 
     public void preview() {
@@ -72,5 +52,24 @@ public class PageContent {
     @Override
     public int hashCode() {
         return 31 * title.hashCode() + text.hashCode();
+    }
+
+    private class Memento {
+        private String mText;
+
+        private int mPage;
+
+        Memento() {
+            mText = text;
+            mPage = page;
+        }
+
+        String getText() {
+            return mText;
+        }
+
+        int getPage() {
+            return mPage;
+        }
     }
 }

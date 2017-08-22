@@ -12,7 +12,7 @@ public class MementoDemo {
         originator.setState("State1");
 
         originator.setState("State2");
-        caretaker.addMemento( originator.save());
+        caretaker.addMemento(originator.save());
 
         originator.setState("State3");
         caretaker.addMemento(originator.save());
