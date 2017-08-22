@@ -11,9 +11,7 @@ import org.junit.Test;
 
 import java.util.LinkedList;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class SwitcherTest extends WriterTest {
 
@@ -39,7 +37,7 @@ public class SwitcherTest extends WriterTest {
     }
 
     @Test
-    public void onTest(){
+    public void onTest() {
         switcher.on();
 
         assertEquals("TV on" + System.lineSeparator() +
@@ -50,7 +48,7 @@ public class SwitcherTest extends WriterTest {
     }
 
     @Test
-    public void offTest(){
+    public void offTest() {
         light.turnOn();
         tv.turnOn();
 

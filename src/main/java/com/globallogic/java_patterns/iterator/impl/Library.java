@@ -6,7 +6,6 @@ import com.globallogic.java_patterns.iterator.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 // implements java.util.Iterable
 public class Library implements Container {
@@ -42,7 +41,7 @@ public class Library implements Container {
 
         @Override
         public Book next() {
-            return (this.hasNext()) ?  books.get(index++) : null;
+            return (this.hasNext()) ? books.get(index++) : null;
         }
     }
 }

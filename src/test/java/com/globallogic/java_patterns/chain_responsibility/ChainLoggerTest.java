@@ -14,7 +14,7 @@ public class ChainLoggerTest extends WriterTest {
     private AbstractLogger loggerChain;
 
     @Before
-    public void getChainOfLoggers(){
+    public void getChainOfLoggers() {
         AbstractLogger errorLogger = new ErrorLogger(Level.ERROR);
         AbstractLogger fileLogger = new FileLogger(Level.DEBUG);
         AbstractLogger consoleLogger = new ConsoleLogger(Level.INFO);

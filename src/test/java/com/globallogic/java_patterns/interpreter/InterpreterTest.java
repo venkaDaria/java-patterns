@@ -11,7 +11,7 @@ import static junit.framework.TestCase.assertTrue;
 public class InterpreterTest {
 
     @Test
-    public void maleExpressionTest(){
+    public void maleExpressionTest() {
         Expression robert = new TerminalExpression("Robert");
         Expression john = new TerminalExpression("John");
 
@@ -24,7 +24,7 @@ public class InterpreterTest {
     }
 
     @Test
-    public void marriedWomanExpressionTest(){
+    public void marriedWomanExpressionTest() {
         Expression julie = new TerminalExpression("Julie");
         Expression married = new TerminalExpression("Married");
 
