@@ -11,15 +11,15 @@ public abstract class AbstractLogger {
         this.level = level;
     }
 
-    public void setNextLogger(final AbstractLogger nextLogger){
+    public void setNextLogger(final AbstractLogger nextLogger) {
         this.nextLogger = nextLogger;
     }
 
-    public void logMessage(final Level level, final String message){
-        if (this.level.lessThan(level)){
+    public void logMessage(final Level level, final String message) {
+        if (this.level.lessThan(level)) {
             write(message);
         }
-        if (nextLogger != null){
+        if (nextLogger != null) {
             nextLogger.logMessage(level, message);
         }
     }

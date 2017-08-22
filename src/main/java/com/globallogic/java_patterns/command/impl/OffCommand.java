@@ -15,7 +15,7 @@ public class OffCommand implements Command {
         light.turnOff();
     }
 
-    public void undo(){
+    public void undo() {
         light.turnOn();
     }
 }

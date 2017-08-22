@@ -8,7 +8,7 @@ public class Macros implements Command {
 
     private final LinkedList<Command> commands;
 
-    public Macros(LinkedList<Command> commands){
+    public Macros(LinkedList<Command> commands) {
         this.commands = new LinkedList<>(commands);
     }
 
@@ -16,7 +16,7 @@ public class Macros implements Command {
         commands.forEach(Command::execute);
     }
 
-    public void undo(){
+    public void undo() {
         commands.descendingIterator().forEachRemaining(Command::undo);
     }
 }

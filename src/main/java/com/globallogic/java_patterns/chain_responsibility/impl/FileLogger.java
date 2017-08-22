@@ -5,7 +5,7 @@ import com.globallogic.java_patterns.chain_responsibility.Level;
 
 public class FileLogger extends AbstractLogger {
 
-    public FileLogger(final Level level){
+    public FileLogger(final Level level) {
         setLevel(level);
     }
 

@@ -5,7 +5,7 @@ import com.globallogic.java_patterns.chain_responsibility.Level;
 
 public class ConsoleLogger extends AbstractLogger {
 
-    public ConsoleLogger(final Level level){
+    public ConsoleLogger(final Level level) {
         setLevel(level);
     }
 

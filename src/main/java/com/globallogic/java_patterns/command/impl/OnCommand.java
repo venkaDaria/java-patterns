@@ -17,7 +17,7 @@ public class OnCommand implements Command {
     }
 
     @Override
-    public void undo(){
+    public void undo() {
         light.turnOff();
     }
 }
