@@ -8,7 +8,7 @@ public class BookFactory {
     private static final HashMap<String, Book> books = new HashMap<>();
 
     public static Book getBook(String title) {
-        if(books.containsKey(title)) {
+        if (books.containsKey(title)) {
             return books.get(title);
         }
 

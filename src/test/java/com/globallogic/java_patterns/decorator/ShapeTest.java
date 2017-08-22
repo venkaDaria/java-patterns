@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ShapeTest extends WriterTest{
+public class ShapeTest extends WriterTest {
 
     @Test
     public void blueCircleTest() {
@@ -21,15 +21,15 @@ public class ShapeTest extends WriterTest{
     @Test
     public void dottedCircleTest() {
         new DottedDecorator(new Circle()).draw();
-        assertEquals("circle" + System.lineSeparator()+ "dotted border"
+        assertEquals("circle" + System.lineSeparator() + "dotted border"
                 + System.lineSeparator(), outContent.toString());
     }
 
     @Test
     public void blueDottedCircleTest() {
         new DottedDecorator(new BlueDecorator(new Circle())).draw();
-        assertEquals("circle" + System.lineSeparator()+ "blue border"
-                + System.lineSeparator()+ "dotted border" + System.lineSeparator(), outContent.toString());
+        assertEquals("circle" + System.lineSeparator() + "blue border"
+                + System.lineSeparator() + "dotted border" + System.lineSeparator(), outContent.toString());
     }
 
     @Test
@@ -42,14 +42,14 @@ public class ShapeTest extends WriterTest{
     @Test
     public void dottedRectangleTest() {
         new DottedDecorator(new Rectangle()).draw();
-        assertEquals("rectangle" + System.lineSeparator()+ "dotted border"
+        assertEquals("rectangle" + System.lineSeparator() + "dotted border"
                 + System.lineSeparator(), outContent.toString());
     }
 
     @Test
     public void blueDottedRectangleTest() {
         new DottedDecorator(new BlueDecorator(new Rectangle())).draw();
-        assertEquals("rectangle" + System.lineSeparator()+ "blue border"
-                + System.lineSeparator()+ "dotted border" + System.lineSeparator(), outContent.toString());
+        assertEquals("rectangle" + System.lineSeparator() + "blue border"
+                + System.lineSeparator() + "dotted border" + System.lineSeparator(), outContent.toString());
     }
 }
