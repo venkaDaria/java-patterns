@@ -1,9 +1,9 @@
-#### Links
+### Links
 - GoF - Design Patterns: Elements of Reusable Object-Oriented Software
 - [Java core libraries](https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries)
-- [Шпаргалка](https://habrahabr.ru/post/210288/)
+- [Cheat sheets](https://habrahabr.ru/post/210288/)
 
-#### Patterns
+### Patterns
 - **Creational patterns**
     - *Abstract factory* (recognizeable by creational methods returning the factory itself which in turn can be used to create another abstract/interface type)
     - *Builder* (recognizeable by creational methods returning the instance itself)
@@ -19,6 +19,7 @@
     - *Facade* (recognizeable by behavioral methods which internally uses instances of different independent abstract/interface types)
     - *Flyweight* (recognizeable by creational methods returning a cached instance, a bit the "multiton" idea)
     - *Proxy* (recognizeable by creational methods which returns an implementation of given abstract/interface type which in turn delegates/uses a different implementation of given abstract/interface type)
+
 - **Behavioral patterns**
     - *Chain of responsibility* (recognizeable by behavioral methods which (indirectly) invokes the same method in another implementation of same abstract/interface type in a queue)
     - *Command* (recognizeable by behavioral methods in an abstract/interface type which invokes a method in an implementation of a different abstract/interface type which has been encapsulated by the command implementation during its creation)
