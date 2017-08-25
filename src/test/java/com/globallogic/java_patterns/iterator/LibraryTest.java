@@ -23,7 +23,7 @@ public class LibraryTest extends WriterTest {
 
         library.forEach(System.out::println);
 
-        assertEquals("Book: One" + System.lineSeparator() + "Book: Two" + System.lineSeparator()
-                + "Book: Three" + System.lineSeparator(), outContent.toString());
+        assertEquals("Roman: One" + System.lineSeparator() + "Roman: Two" + System.lineSeparator()
+                + "Roman: Three" + System.lineSeparator(), outContent.toString());
     }
 }

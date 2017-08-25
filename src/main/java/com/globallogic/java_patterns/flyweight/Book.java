@@ -1,10 +1,8 @@
 package com.globallogic.java_patterns.flyweight;
 
-public class Book {
+public abstract class Book {
 
     private String title;
-
-    private String author;
 
     public String getTitle() {
         return title;
@@ -13,4 +11,6 @@ public class Book {
     public void setTitle(final String title) {
         this.title = title;
     }
+
+    public abstract void read();
 }

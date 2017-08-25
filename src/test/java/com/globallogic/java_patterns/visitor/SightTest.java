@@ -1,12 +1,12 @@
 package com.globallogic.java_patterns.visitor;
 
 import com.globallogic.java_patterns.WriterTest;
-import com.globallogic.java_patterns.visitor.impl.*;
+import com.globallogic.java_patterns.visitor.impl.Cinema;
+import com.globallogic.java_patterns.visitor.impl.Theater;
+import com.globallogic.java_patterns.visitor.impl.UnknownSight;
 import com.globallogic.java_patterns.visitor.impl_visitor.HappyVisitor;
 import com.globallogic.java_patterns.visitor.impl_visitor.SadVisitor;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
