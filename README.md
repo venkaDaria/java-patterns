@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/venkaDaria/java-patterns.svg?style=svg)](https://circleci.com/gh/venkaDaria/java-patterns)
+
 ### Links
 - GoF - Design Patterns: Elements of Reusable Object-Oriented Software
 - [Java core libraries](https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries)
